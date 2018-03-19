@@ -10,8 +10,11 @@ import { Icon, Button, Container, Header, Content, Left } from 'native-base';
 class HomeScreen extends Component{
     render(){
         return (
-            <View>
-            </View>
+            <Container>
+                <Content>
+                    <Text> Página Principal </Text>
+                </Content>
+            </Container>
         );
     }
 }
