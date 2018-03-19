@@ -11,7 +11,11 @@ class HomeScreen extends Component{
     render(){
         return (
             <Container>
-                <Content>
+                <Content contentContainerStyle={{
+                    flex: 1,
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                }}>
                     <Text> Página Principal </Text>
                 </Content>
             </Container>
