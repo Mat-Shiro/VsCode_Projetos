@@ -5,23 +5,19 @@ import {
   StyleSheet
 } from 'react-native';
 
-import { Drawernavigator } from 'react-navigation';
+import { DrawerNavigator } from 'react-navigation';
 import HomeScreen from './HomeScreen';
 import SettingsScreen from './SettingsScreen';
 
 class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>
-          Menu de Navegação customizado
-        </Text>
-      </View>
+      <MyApp />
     );
   }
 }
 
-const MyApp = Drawernavigator ({
+const MyApp = DrawerNavigator({
 
   Home: {
     screen: HomeScreen
@@ -29,7 +25,7 @@ const MyApp = Drawernavigator ({
   Settings: {
     screen: SettingsScreen
   }
-});
+})
 
 export default App;
 
