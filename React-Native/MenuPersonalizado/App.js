@@ -6,6 +6,8 @@ import {
 } from 'react-native';
 
 import { Drawernavigator } from 'react-navigation';
+import HomeScreen from './HomeScreen';
+import SettingsScreen from './SettingsScreen';
 
 class App extends Component {
   render() {
