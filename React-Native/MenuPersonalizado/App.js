@@ -18,6 +18,17 @@ class App extends Component {
     );
   }
 }
+
+const MyApp = Drawernavigator ({
+
+  Home: {
+    screen: HomeScreen
+  },
+  Settings: {
+    screen: SettingsScreen
+  }
+});
+
 export default App;
 
 styles = StyleSheet.create({
