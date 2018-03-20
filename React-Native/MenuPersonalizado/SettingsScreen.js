@@ -20,7 +20,7 @@ class SettingsScreen extends Component {
         return (
             <Container>
 
-                <Header>
+                <Header style={{ backgroundColor: 'green' }}>
                     <Left>
                         <Icon name="menu" onPress={() =>
                         this.props.navigation.navigate('DrawerOpen')} />
