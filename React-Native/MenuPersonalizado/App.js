@@ -24,7 +24,7 @@ class App extends Component {
 const CustomDrawerContentComponent = (props) => (
 
   <Container>
-    <Header style={{ height: 200, backgroundColor: 'white' }}>
+    <Header style={{ height: 200, backgroundColor: 'grey' }}>
       <Body>
         <Image
           style={styles.drawerImage}
@@ -39,15 +39,15 @@ const CustomDrawerContentComponent = (props) => (
 );
 
 const MyApp = DrawerNavigator({
-
-  Home: {
+  
+  'Página Inicial': {
     screen: HomeScreen
   },
-  Options: {
+  'Configurações': {
     screen: SettingsScreen
   }
 }, {
-  initialRouteName: 'Home',
+  initialRouteName: 'Página Inicial',
   contentComponent: CustomDrawerContentComponent,
   drawerOpenRoute: 'DrawerOpen',
   drawerCloseRoute: 'DrawerClose',
